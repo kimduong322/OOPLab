@@ -17,6 +17,19 @@ public class CartTest {
 		
 		// Test the displayCart method
 		cart.displayCart();
+		
+		// Test search() by title
+		System.out.println("\nTest search() by title");
+		cart.search("a"); // => dvd2, dvd3 
+		cart.search("the lion"); // dvd1
+		cart.search("THE LION"); // dvd1
+		cart.search("The WAR");  // not found
+		
+		
+		// Test serch() by id
+		System.out.println("\nTest search() by title");
+		cart.search(3); // dvd3
+		cart.search(4); // not found
 	}
 
 }

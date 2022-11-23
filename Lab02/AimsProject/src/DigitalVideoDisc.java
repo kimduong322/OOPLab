@@ -69,4 +69,19 @@ public class DigitalVideoDisc {
 	public String printDetail() {
 		return(getTiltle() + " - " + getCategory() + " - " + getDirector() + " - " + getLength() + ": " + getCost() + " $");
 	}
+	
+	public boolean isMatch(String title) {
+		String[] tmp = title.split(" ", 0);
+		
+		for(String x: tmp) {
+			// convert all to LowerCase, and compare each word
+			if(getTiltle().toLowerCase().contains(x.toLowerCase())) return true;
+		}
+		
+		return false;
+	}
+	
+	public boolean isMatch(int id) {
+		return this.id == id;
+	}
 }
