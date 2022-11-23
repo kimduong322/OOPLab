@@ -28,3 +28,8 @@ ReadingAssignment: When should accessor be used?
 
 When I want to protect data of objects, I encapsulation its. Accessor is getter
 and setter. Its helps you get data of an object, update data of an object.
+
+-------------------------------------------------------------------------------
+Question: Is Java a Pass by Value or a Pass by Reference programming Language?
+-------------------------------------------------------------------------------
+Java is a Pass by Value programming Language.
