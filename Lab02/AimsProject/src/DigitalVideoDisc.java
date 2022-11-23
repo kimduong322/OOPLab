@@ -22,6 +22,9 @@ public class DigitalVideoDisc {
 	public float getCost() {
 		return cost;
 	}
+	public void setTiltle(String tiltle) {
+		this.tiltle = tiltle;
+	}
 	public DigitalVideoDisc(String tiltle) {
 		super();
 		this.tiltle = tiltle;
