@@ -1,5 +1,7 @@
 
 public class DigitalVideoDisc {
+	private static int nbDigitalVideoDiscs = 0;
+	private int id;
 	private String tiltle;
 	private String category;
 	private String director;
@@ -7,6 +9,9 @@ public class DigitalVideoDisc {
 	private float cost;
 	
 	
+	public int getId() {
+		return id;
+	}
 	public String getTiltle() {
 		return tiltle;
 	}
@@ -27,16 +32,22 @@ public class DigitalVideoDisc {
 	}
 	public DigitalVideoDisc(String tiltle) {
 		super();
+		nbDigitalVideoDiscs++;
+		id = nbDigitalVideoDiscs;
 		this.tiltle = tiltle;
 	}
 	public DigitalVideoDisc(String tiltle, String category, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		id = nbDigitalVideoDiscs;
 		this.tiltle = tiltle;
 		this.category = category;
 		this.cost = cost;
 	}
 	public DigitalVideoDisc(String tiltle, String category, String director, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		id = nbDigitalVideoDiscs;
 		this.tiltle = tiltle;
 		this.category = category;
 		this.director = director;
@@ -44,6 +55,8 @@ public class DigitalVideoDisc {
 	}
 	public DigitalVideoDisc(String tiltle, String category, String director, int length, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		id = nbDigitalVideoDiscs;
 		this.tiltle = tiltle;
 		this.category = category;
 		this.director = director;
@@ -53,6 +66,7 @@ public class DigitalVideoDisc {
 	
 	public void printDetail() {
 		System.out.println("---------------------------");
+		System.out.println("Id: " + this.getId());
 		System.out.println("Name: " + this.getTiltle());
 		System.out.println("Category: " + this.getCategory());
 		System.out.println("Director: " + this.getDirector());
