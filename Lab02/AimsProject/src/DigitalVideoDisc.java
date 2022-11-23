@@ -63,15 +63,10 @@ public class DigitalVideoDisc {
 		this.length = length;
 		this.cost = cost;
 	}
-	
-	public void printDetail() {
-		System.out.println("---------------------------");
-		System.out.println("Id: " + this.getId());
-		System.out.println("Name: " + this.getTiltle());
-		System.out.println("Category: " + this.getCategory());
-		System.out.println("Director: " + this.getDirector());
-		System.out.println("Length: " + this.getLength());
-		System.out.println("Cost: " + this.getCost());
-		System.out.println("---------------------------");
+	/**
+	 * return String type "[Title] - [category] - [Director] - [Length]: [Price] $"
+	 * **/
+	public String printDetail() {
+		return(getTiltle() + " - " + getCategory() + " - " + getDirector() + " - " + getLength() + ": " + getCost() + " $");
 	}
 }
