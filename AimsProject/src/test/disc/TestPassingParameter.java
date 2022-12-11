@@ -1,12 +1,12 @@
 package test.disc;
-import aims.disc.DigitalVideoDisc;
+import aims.media.DigitalVideoDisc;
 
 public class TestPassingParameter {
 
 	public static void swap(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
-		String tmp = dvd1.getTiltle(); 
-		dvd1.setTiltle(dvd2.getTiltle());
-		dvd2.setTiltle(tmp);
+		String tmp = dvd1.getTitle(); 
+		dvd1.setTitle(dvd2.getTitle());
+		dvd2.setTitle(tmp);
 	}
 	
 	public static void main(String[] arg) {
@@ -16,16 +16,16 @@ public class TestPassingParameter {
 		
 		// before swapping
 		System.out.println("Before swapping: ");
-		System.out.println("Title of dvd1: " + dvd1.getTiltle());
-		System.out.println("Title of dvd2: " + dvd2.getTiltle());
+		System.out.println("Title of dvd1: " + dvd1.getTitle());
+		System.out.println("Title of dvd2: " + dvd2.getTitle());
 		
 		// Swap
 		swap(dvd1, dvd2);
 		
-		// afer swapping
+		// after swapping
 		System.out.println("After swapping: ");
-		System.out.println("Title of dvd1: " + dvd1.getTiltle());
-		System.out.println("Title of dvd2: " + dvd2.getTiltle());
+		System.out.println("Title of dvd1: " + dvd1.getTitle());
+		System.out.println("Title of dvd2: " + dvd2.getTitle());
 
 	}
 }
